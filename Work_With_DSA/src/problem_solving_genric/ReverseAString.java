@@ -75,6 +75,39 @@ public class ReverseAString {
 		StringBuilder _name = new StringBuilder(name);
 		StringBuilder reversedStr2 = _name.reverse();
 		System.out.println("Reversed String 3rd Method: " + reversedStr2);
+		
+		
+		/*Approach 2 Pseudo Code:
+		 * 
+		 * Ques: Reverse a string str = "Target"
+		 * 
+		 *  a. Get the input string and convert it to char []
+		 *  b. Initialize two pointers
+		 *  c. Create a while loop with condition left < right
+		 *  d. Using tmp swap the char
+		 *  e. return the char
+		 *  
+		 *  
+		 *  Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+ 
+			Example 1:
+			Input: s = "A man, a plan, a canal: Panama"
+			Output: true
+			Explanation: "amanaplanacanalpanama" is a palindrome.
+			Example 2:
+			Input: s = "race a car"
+			Output: false
+			Explanation: "raceacar" is not a palindrome.
+			
+			Input: s = "ab-cd"
+			Output: "dc-ba"
+			Example 2:
+			Input: s = "a-bC-dEf-ghIj"
+			Output: "j-Ih-gfE-dCba"
+			Example 3:
+			Input: s = "Test1ng-Leet=code-Q!"
+			Output: "Qedo1ct-eeLg=ntse-T!"
+		 */
 	
 	}
 

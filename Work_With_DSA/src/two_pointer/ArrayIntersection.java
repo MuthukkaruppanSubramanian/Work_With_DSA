@@ -1,4 +1,4 @@
-package problem_solving_genric;
+package two_pointer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
