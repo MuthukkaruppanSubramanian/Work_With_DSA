@@ -1,11 +1,8 @@
-package problem_solving_genric;
+package two_pointer;
 
-public class TemplateTestClass {
+public class CountSmallestNum {
 	/*
-	 * Given two integer arrays nums1 and nums2, return an array of their
-	 * intersection. Each element in the result must be unique and you may return
-	 * the result in any order.   Example 1: Input: nums1 = [1,2,2,1], nums2 = [2,2]
-	 * Output: [2]
+	 * Qques: Find the smallest number of 
 	 *
 	 *
 	 * // TODO Auto-generated method stub
@@ -47,9 +44,9 @@ public class TemplateTestClass {
 	 *	Approach 1: Start with worst -> Improve (Optimize) -> End up with the best
 	 *
 	 * 7) Start with Pseudo code
-	 * 		a. 
-	 * 		b.
-	 * 		c. 
+	 * 		a. Sort the give array
+	 * 		b. Traverse the array in while loop until left <=right
+	 * 		c. If
 	 * 		d. 
 	 * 		e. 
 	 * 		f. 
@@ -59,5 +56,12 @@ public class TemplateTestClass {
 	 * 9)Test against the different data set
 	 * 
 	 * 10) If it fails Debug them to solve it !!
+	 */
+	
+	/*
+	 * Pseudo Code for Brute Force
+	 * 
+	 * a.On the given array traverse thr two for loop
+	 * b.If the number is smallest add 
 	 */
 }

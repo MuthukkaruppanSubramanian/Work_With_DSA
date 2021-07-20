@@ -69,7 +69,7 @@ public class ReturnPeakElement {
 	
 	@Test
 	public void test2() {
-		int[] array = {1,2,3,2,5,1};
+		int[] array = {1,2,3,5,6,6};
 		System.out.println(returnThenPeakElement(array));
 	}
 	
