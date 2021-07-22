@@ -1,19 +1,26 @@
 package binary_search;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
+import org.junit.Assert;
 import org.junit.Test;
 
 public class Template {
-	/*
+	/* 
+	 * 
 	 * Given Input  data type:
 	 *       Output data type:
 	 * Sample Test Data 
 	 *    Input :
 	 *    output:
 	 *
-	 * Approach 1: 
+	 * Approach 1:
 	 *
 	 * Pseudo code:
-	 *
+	 * 
+	 * 
 	 * Time / Space Complexity:
 	 * 		
 	 */
@@ -28,22 +35,9 @@ public class Template {
 
 	}
 
-	@Test
-	public void test3() {
 
-	}
+	public String printCharWithOccurrence(String str) {
 
-	@Test
-	public void test4() {
-
-	}
-
-	@Test
-	public void test5() {
-
-	}
-
-	public int findGivenNumInArray(int target, int[] nums) {
-		return -1;
+		return "";
 	}
 }

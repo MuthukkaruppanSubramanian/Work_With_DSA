@@ -66,14 +66,14 @@ public class ArrayIntersection {
 	 * 10) If it fails Debug them to solve it !!
 	 */
 	
-	//@Test
+	@Test
 	public void test1() {
 		int [] nums1 = {1,2,2,1};
 		int [] nums2 = {2,2};
 		System.out.println(arrayInterSection(nums1, nums2));
 	}
 
-	//@Test
+	@Test
 	public void test2() {
 		int [] nums1 = {1,1,2,2,3};
 		int [] nums2 = {2,5,1};
@@ -84,6 +84,13 @@ public class ArrayIntersection {
 	public void test3() {
 		int [] nums1 = {10,4,2,11,1};
 		int [] nums2 = {9,2,4,10,0,1,11};
+		System.out.println(arrayInterSection(nums1, nums2));
+	}
+
+	@Test
+	public void test4() {
+		int [] nums1 = {4,9,5};
+		int [] nums2 = {9,4,9,8,4};
 		System.out.println(arrayInterSection(nums1, nums2));
 	}
 	
@@ -113,9 +120,9 @@ public class ArrayIntersection {
 	public int[] arrayInterSection(int[] nums1, int[] nums2) {
 		Arrays.sort(nums1);
 		Arrays.sort(nums2);
-		int[] interSection = new int[Math.max(nums1.length, nums2.length)];
+		int[] interSection = new int[Math.min(nums1.length, nums2.length)];
 		int p1 = 0, p2 = 0, counter = 0;
-		while(p2 < nums2.length) {
+		while(p2 < nums2.length && p1 < nums1.length) {
 			if(nums1[p1] == nums2[p2]) {
 				interSection[counter++] = nums1[p1++];
 				p2++;

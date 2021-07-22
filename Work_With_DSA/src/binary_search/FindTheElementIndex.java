@@ -2,7 +2,7 @@ package binary_search;
 
 import org.junit.Test;
 
-public class FindMissingNumber {
+public class FindTheElementIndex {
 	/*
 	 * Given Input  data type:
 	 *       Output data type:

@@ -2,7 +2,7 @@ package sliding_window;
 
 import org.junit.Test;
 
-public class MinArray {
+public class KandaneAlgoMaxSum {
 	/*
 	 * Given Input  data type: int []
 	 *       Output data type: int
