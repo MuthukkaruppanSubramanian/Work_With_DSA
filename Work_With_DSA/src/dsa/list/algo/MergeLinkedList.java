@@ -74,23 +74,7 @@ public class MergeLinkedList {
     		return node2;
     	}
     }
-    
-//    public Node reorderNodesRecursionApproach(Node node1) {
-//    	Node left = node1.next;
-//    	Node right = node1.next.next;
-//    	while(node1 !=null) {
-//    		if((right.value & 1) == 0) {
-//    			node1.next = node1.next;
-//    		}else {
-//    			node1.next = right;
-//    			node1.next.next= left;
-//    			left = left.next;
-//    			right = right.next.next;
-//    		}
-//    	}
-//    	return node1;
-//    }
-    
+       
     //@Test //To Create a linked list
     public void addNodes() {
     	Node head = new Node(1);
@@ -115,29 +99,7 @@ public class MergeLinkedList {
     	
     	//printAllNodes(mergeNodesLinearApproach(head1, head2));
     	printAllNodes(mergeNodesRecursionApproach(head1, head2));
-    }
-    
-    public Node condense(Node head) {
-    // Write your code here
-	    Node outputNode = new Node();  
-	    Node tmp = outputNode;
-        HashSet<Integer> set = new HashSet<>();
-        while(head!=null){
-              if(set.contains(head.value)){
-                  head = head.next;
-                  tmp.next = null;
-              }else{
-                  set.add(head.value);
-                  tmp.next = head;
-                  head = head.next;
-                  tmp = tmp.next;
-              }
-              
-          }
-        return outputNode;    
-    }
-    
-    
+    }   
     
     @Test //Re order the new node with odd followed by even
     public void reOrderNodes() {
@@ -149,18 +111,5 @@ public class MergeLinkedList {
     	head1.next.next.next.next.next = addNode(1);
     	head1.next.next.next.next.next.next = addNode(2);
     	head1.next.next.next.next.next.next.next = addNode(6);
-    	printAllNodes(condense(head1));
-    }
-    
-    //sort array and difference
-    public static int minDiff(List<Integer> arr) {
-    // Write your code here
-        int sum = 0;
-        Collections.sort(arr);
-        for (int i = 0; i < arr.size()-1; i++) {
-            sum += Math.abs(arr.get(i+1) - arr.get(i));
-            System.out.println(sum);
-        }
-        return sum;
     }
 }

@@ -1,12 +1,18 @@
-import java.util.*;
-import org.junit.*;
+package dsa.two_pointer.algo;
 
-public class Template {
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class MovePositiveToRight {
 	/* 
 	 * 
 	 * Given Input  data type:
 	 *       Output data type:
-	 *       
 	 * Sample Test Data 
 	 *    Input :
 	 *    output:
@@ -30,8 +36,9 @@ public class Template {
 
 	}
 
-	@Test
-	public void test3() {
 
+	public String printCharWithOccurrence(String str) {
+
+		return "";
 	}
 }
