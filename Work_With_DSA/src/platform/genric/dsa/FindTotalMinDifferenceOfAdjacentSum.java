@@ -29,8 +29,7 @@ public class FindTotalMinDifferenceOfAdjacentSum {
 
 	@Test
 	public void test1() {
-		ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(5,4,3,2,-7,-1));
-		Assert.assertTrue(minDiff(nums)==12);
+		ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(-5,3,2,-7,-1));		Assert.assertTrue(minDiff(nums)==12);
 	}
 
 	@Test
