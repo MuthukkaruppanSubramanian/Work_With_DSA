@@ -94,6 +94,13 @@ public class ArrayIntersection {
 		System.out.println(arrayInterSection(nums1, nums2));
 	}
 	
+	@Test
+	public void test5() {
+		int [] nums1 = {1,2,2,1};
+		int [] nums2 = {2,2,2};
+		System.out.println(arrayInterSection(nums1, nums2));
+	}
+	
 	public Set<Integer> getTheCommonElement(int[] nums1, int[] nums2) {
 		Set<Integer> commonValues = new HashSet<Integer>();
 		for (int i = 0; i < nums1.length; i++) {
