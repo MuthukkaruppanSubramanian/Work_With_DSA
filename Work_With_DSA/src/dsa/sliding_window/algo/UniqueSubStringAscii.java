@@ -34,7 +34,7 @@ public class UniqueSubStringAscii {
 	 * 		
 	 */
 	
-	//@Test
+	@Test
 	public void test1() {
 		String str = "abcabcbb";
 		System.out.println(findUniqueSubString(str));
