@@ -60,6 +60,7 @@ public class UniqueSubStringAscii {
 	
 	private int findUniqueSubString(String str) {
 		int max =0, left =0, right=0;
+		String s = "";
 		int[] asciiArray = new int [128];
 		for(right=0; right < str.length();right++) {
 			asciiArray[str.charAt(right)]++;
@@ -67,8 +68,52 @@ public class UniqueSubStringAscii {
 				asciiArray[str.charAt(left++)]--;
 			}
 			max = Math.max(max, right-left+1);
+			if(max == right-left+1) s = str.substring(left,right+1);
 		}
+		System.out.println(s);
 		return max;
 	}
+	
+	public String findUniqueSubStringWith26(String s) {
+		String word = "";
+		int left = 0, right = 0, max = 0;
+		int[] asciiArray = new int[26];
+		while(right < s.length()) {
+			asciiArray[s.charAt(right)-'a']++;
+			while(asciiArray[s.charAt(right)-'a'] > 1) {
+				asciiArray[s.charAt(left++)-'a']--;
+			}
+			max = Math.max(max, right-left+1);
+			if(max == right-left+1) word = s.substring(left,right+1);
+			right++;
+		}
+		return word;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
