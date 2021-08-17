@@ -68,22 +68,21 @@ public class LC_412_Fizz_Buzz {
 	    map.put(15, "FizzBuzz");
 	    map.put(5, "Buzz");
 	    map.put(3, "Fizz");
-	    int left = n-(n-1), right = n;
-	    List<String> output = new ArrayList<>();
+	    int left = 1, right = n;
+	    List<String> output = Arrays.asList(new String[n]);
 	    while(left <= right) {
-	    	if (left % 15 == 0) output.add(0,map.get(15));
-	    	else if(left % 3 == 0) output.add(0,map.get(3));
-	    	else if(left % 5 == 0) output.add(0,map.get(5));
-	    	else output.add(0,""+(left));
+	    	if (left % 15 == 0) output.set(left-1,map.get(15));
+	    	else if(left % 3 == 0) output.set(left-1,map.get(3));
+	    	else if(left % 5 == 0) output.set(left-1,map.get(5));
+	    	else output.set(left-1,""+(left));
 	    	if(left==right) break;
-	    	if (right % 15 == 0) output.add(map.get(15));
-	    	else if(right % 3 == 0) output.add(map.get(3));
-	    	else if(right % 5 == 0) output.add(map.get(5));
-	    	else output.add(""+(right));
+	    	if (right % 15 == 0) output.set(right-1,map.get(15));
+	    	else if(right % 3 == 0) output.set(right-1,map.get(3));
+	    	else if(right % 5 == 0) output.set(right-1,map.get(5));
+	    	else output.set(right-1,""+(right));
 	    	left++;
 	    	right--;
 	    }
-		Collections.sort(output);;
 		return output;
 	}
 }
