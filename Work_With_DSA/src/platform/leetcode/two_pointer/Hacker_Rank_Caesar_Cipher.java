@@ -79,10 +79,16 @@ public class Hacker_Rank_Caesar_Cipher {
 				d = (char) (s.charAt(i)+k);
 				output.append(d);
 			}else {
+				//If k is greater than 26 then current char + k - 'Z'|'z' + 'A'|'a'-1
+				//ex: a+26 => 123 - 'z'(122) => 1 +'a'-1 => 1+97-1 => 97 =>a
 				if(k <= 26) d = (char) ((s.charAt(i)+k)-(caseChar.charAt(1))+(caseChar.charAt(0))-1);
 				else {
-					int tmp = Math.abs((k-Math.abs(s.charAt(i)-caseChar.charAt(1)))%26);
-					d = (tmp%26 == 0)?(char) caseChar.charAt(1) : (char) (tmp%26+(caseChar.charAt(0))-1);
+					//if k >26 then (k - (current char - 'Z'|'z'))%26
+					//ex 100 - (A-'Z') => 100-25 => 75%26 => 23
+					int tmp = (Math.abs(k-Math.abs(s.charAt(i)-caseChar.charAt(1))))%26;
+					//if tmp value == 0 then char is 'Z'|'z' else 23+'A'|'a'-1
+					// 'Z'|'z' else 23+65-1 => 87 => w
+					d = (tmp == 0)?(char) caseChar.charAt(1) : (char) (tmp+(caseChar.charAt(0))-1);
 				}
 				output.append(d);
 			}
