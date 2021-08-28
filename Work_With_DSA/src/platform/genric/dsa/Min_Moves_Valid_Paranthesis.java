@@ -9,20 +9,23 @@ import org.junit.Test;
 public class Min_Moves_Valid_Paranthesis {
 	@Test
 	public void test1() {
-		String s = "(()))";
-		Assert.assertTrue(minimumMovesToMakeValid(s)==1);
+		String s = "(())";
+		Assert.assertTrue(minimumMovesToMakeValid(s)==0);
+		Assert.assertTrue(minMovestoMakePranthesisValidUsingString(s)==0);
 	}
 
 	@Test
 	public void test2() {
 		String s = ")))(((";
 		Assert.assertTrue(minimumMovesToMakeValid(s)==6);
+		Assert.assertTrue(minMovestoMakePranthesisValidUsingString(s)==6);
 	}
 
 	@Test
 	public void test3() {
-		String s = ")))";
-		Assert.assertTrue(minimumMovesToMakeValid(s)==3);
+		String s = "()))((";
+		Assert.assertTrue(minimumMovesToMakeValid(s)==4);
+		Assert.assertTrue(minMovestoMakePranthesisValidUsingString(s)==4);
 	}
 
 	/*
@@ -34,7 +37,7 @@ public class Min_Moves_Valid_Paranthesis {
 	 *
 	 * Approach 1: Stack
 	 * 
-	 * Approach 2: 
+	 * Approach 2: String
 	 *
 	 * Pseudo code - Approach 1:
 	 * 
@@ -65,4 +68,46 @@ public class Min_Moves_Valid_Paranthesis {
 		}
 		return counter+stack.size();
 	}
+	
+	private int minMovestoMakePranthesisValidUsingString(String s) {
+		int openCount = 0, closeCount = 0;
+		for (int i = 0; i < s.length(); i++) {
+			if(s.charAt(i) == ')') {
+				if(openCount > 0)	openCount--;
+				else closeCount++;
+			}else {
+				openCount++;
+			}
+		}
+		return openCount+closeCount;
+	}
+	
+	private int minimumMovesToMakeValidOptimized(String s) {
+        int ans = 0, bal = 0;
+        for (int i = 0; i < s.length(); ++i) {
+            bal += s .charAt(i) == '(' ? 1 : -1;
+            // It is guaranteed bal >= -1
+            if (bal == -1) {
+                ans++;
+                bal++;
+            }
+        }
+
+        return ans + bal;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
