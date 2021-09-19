@@ -39,7 +39,7 @@ public class FindMissingSmallestPositiveNum {
 	}
 	
 	/*
-	 * Pseudo Code:
+	 * Pseudo Code: Approach 1
 	 * 
 	 */
 	
