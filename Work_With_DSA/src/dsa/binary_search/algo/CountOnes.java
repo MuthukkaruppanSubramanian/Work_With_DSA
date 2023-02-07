@@ -7,7 +7,7 @@ public class CountOnes {
 	/*
 	 * Count all the ones in the sorted array
 	 * 
-	 * Given Change In Input  data type: int[] nums = {0,0,0,0,0,1};
+	 * Given In Input  data type: int[] nums = {0,0,0,0,0,1};
 	 *       Output data type: int 1
 	 * Sample Test Data 
 	 *    Input : int[] nums = {0,1,1,1,1,1};
