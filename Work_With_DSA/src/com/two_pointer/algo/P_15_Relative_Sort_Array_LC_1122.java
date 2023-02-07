@@ -1,4 +1,4 @@
-package com.hashing.algo;
+package com.two_pointer.algo;
 import java.util.*;
 import org.junit.Test;
 

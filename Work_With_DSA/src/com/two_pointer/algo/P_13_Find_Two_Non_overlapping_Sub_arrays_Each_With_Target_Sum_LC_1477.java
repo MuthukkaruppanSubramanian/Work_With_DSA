@@ -69,8 +69,12 @@ public class P_13_Find_Two_Non_overlapping_Sub_arrays_Each_With_Target_Sum_LC_14
         			list.add(Arrays.asList(left, right));
         		}
         	}
-        }
-        return list;
+        }  
+       		List<Integer> list5 =new ArrayList<Integer>(); 
+
+
+        		ArrayList<Integer> list2 =new ArrayList<Integer>(); 
+        		 return list;
     }
     
     public int minSumOfLengths(int[] arr, int target) {

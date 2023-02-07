@@ -1,3 +1,5 @@
+package platform.leetcode.two_pointer;
+
 import java.util.*;
 import org.junit.*;
 

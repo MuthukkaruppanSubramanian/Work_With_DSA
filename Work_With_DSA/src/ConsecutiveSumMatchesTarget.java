@@ -1,7 +1,7 @@
 import java.util.*;
 import org.junit.*;
 
-public class LC_1 {
+public class ConsecutiveSumMatchesTarget {
 	/*
 	 * Problem 1) 
 	 * Given an int array [1,4,20,3,10,5] and 

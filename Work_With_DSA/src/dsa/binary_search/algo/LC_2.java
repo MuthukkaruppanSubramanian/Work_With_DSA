@@ -1,3 +1,5 @@
+package dsa.binary_search.algo;
+
 import java.text.DecimalFormat;
 import java.util.*;
 import org.junit.*;

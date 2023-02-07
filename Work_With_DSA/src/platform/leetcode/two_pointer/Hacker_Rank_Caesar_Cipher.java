@@ -1,4 +1,4 @@
-package platform.hacker_rank.problems;
+package platform.leetcode.two_pointer;
 
 import org.junit.Assert;
 import org.junit.Test;

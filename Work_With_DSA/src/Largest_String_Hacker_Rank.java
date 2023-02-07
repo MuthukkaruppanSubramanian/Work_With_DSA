@@ -25,7 +25,7 @@ import org.junit.Test;
 public class Largest_String_Hacker_Rank {
 	@Test
 	public void example1() {
-
+		int[] array  = {};
 	}
 
 	@Test

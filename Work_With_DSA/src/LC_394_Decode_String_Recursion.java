@@ -44,7 +44,7 @@ public class LC_394_Decode_String_Recursion {
 		while(--numberIndex >=0 && Character.isDigit(s.charAt(numberIndex))) {
 		}
 		int number = Integer.parseInt(s.substring(++numberIndex,firstOpen));
-		String tmp2 = s.substring(firstOpen+1,firstClose).repeat(number);
+		String tmp2 = s.substring(firstOpen+1,firstClose);//.repeat(number);
 		if(numberIndex == 0) {
 			output = tmp2+s.substring(firstClose+1);
 		}else if(firstClose==s.length()-1) {

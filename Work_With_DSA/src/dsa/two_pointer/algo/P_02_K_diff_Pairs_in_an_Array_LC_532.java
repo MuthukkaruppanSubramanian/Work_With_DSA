@@ -1,8 +1,8 @@
-package com.two_pointer.algo;
+package dsa.two_pointer.algo;
 import org.junit.*;
 import java.util.*;
 
-public class P02_K_diff_Pairs_in_an_Array_LC_532 {
+public class P_02_K_diff_Pairs_in_an_Array_LC_532 {
 
 	/*1:22 - 1:38 
 	 * 

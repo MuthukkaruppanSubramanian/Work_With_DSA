@@ -1,4 +1,4 @@
-package com.two_pointer.algo;
+package dsa.two_pointer.algo;
 import org.junit.*;
 import java.util.*;
 

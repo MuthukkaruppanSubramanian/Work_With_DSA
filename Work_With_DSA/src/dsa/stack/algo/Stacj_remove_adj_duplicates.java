@@ -51,6 +51,10 @@ public class Stacj_remove_adj_duplicates {
 			if(!stack.isEmpty() && stack.peek()==s.charAt(i)) stack.pop();
 			else stack.push(s.charAt(i));
 		}
+		StringBuilder sb = new StringBuilder();
+		sb.insert(0, 0)
 		return stack.toString();
+		
+		
 	}
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="dsa/binary_search/algo/|platform/genric/dsa/|platform/leetcode/two_pointer/" kind="src" path="Work_With_DSA/src"/>
+	<classpathentry kind="src" path="Work_With_DSA/src/dsa/binary_search/algo"/>
+	<classpathentry kind="src" path="Work_With_DSA/src/platform/genric/dsa"/>
+	<classpathentry kind="src" path="Work_With_DSA/src/platform/leetcode/two_pointer"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

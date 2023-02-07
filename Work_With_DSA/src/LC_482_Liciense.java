@@ -1,4 +1,4 @@
-package com.firstround.ques;
+
 
 public class LC_482_Liciense {
     public String licenseKeyFormatting(String s, int k) {

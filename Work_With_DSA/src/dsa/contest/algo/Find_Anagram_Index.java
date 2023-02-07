@@ -47,7 +47,4 @@ public class Find_Anagram_Index {
 	10. ----right++
 		Return list.
 	 */
-	
-	
-	public List<Integer> 
 }

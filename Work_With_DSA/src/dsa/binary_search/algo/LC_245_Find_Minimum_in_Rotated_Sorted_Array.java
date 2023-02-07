@@ -1,4 +1,4 @@
-package platform.leetcode.two_pointer;
+package dsa.binary_search.algo;
 import org.junit.*;
 import java.util.*;
 
